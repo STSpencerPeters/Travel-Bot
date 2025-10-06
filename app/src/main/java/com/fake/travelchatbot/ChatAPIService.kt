@@ -8,6 +8,6 @@ import retrofit2.http.POST
 interface ChatApiService {
 
     @Headers("Content-Type: application/json")
-    @POST("chat") // Replace with your endpoint path
+    @POST("/generate")
     fun getChatResponse(@Body request: ChatRequest): Call<ChatResponse>
 }
